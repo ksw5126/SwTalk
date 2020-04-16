@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766017697111",
+    "firebase_url": "https://swtalk-4651b.firebaseio.com",
+    "project_id": "swtalk-4651b",
+    "storage_bucket": "swtalk-4651b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766017697111:android:e9273c7b7994b09c317a12",
+        "android_client_info": {
+          "package_name": "com.example.swtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766017697111-63bjtj9bfnv14tpubm1ag085v5e4q2ua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.swtalk",
+            "certificate_hash": "26bf39347a14eb5ad017f50f894573c97994abde"
+          }
+        },
+        {
+          "client_id": "766017697111-mjiqa6khp8lmh9ihgelen7btl8tkjjer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM4XZ3569ZgnZbZTi3tBvWqor_eubVFoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766017697111-mjiqa6khp8lmh9ihgelen7btl8tkjjer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
