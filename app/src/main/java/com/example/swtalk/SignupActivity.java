@@ -81,7 +81,12 @@ public class SignupActivity extends AppCompatActivity {
                                 userModel.userName = name.getText().toString();
 
                                 String uid = task.getResult().getUser().getUid();
-                                FirebaseDatabase.getInstance().getReference().child("users").child(uid).setValue(userModel);
+                                FirebaseDatabase.getInstance().getReference().child("users").child(uid).setValue(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        SignupActivity.this.finish();
+                                    }
+                                });
 
 
 

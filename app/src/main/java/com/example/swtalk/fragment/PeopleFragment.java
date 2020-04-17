@@ -1,5 +1,7 @@
 package com.example.swtalk.fragment;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.swtalk.R;
+import com.example.swtalk.chat.MessageActivity;
 import com.example.swtalk.model.UserModel;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -80,6 +83,15 @@ public class PeopleFragment extends Fragment {
                     into(((CustomViewHolder)holder).imageView);
 
             ((CustomViewHolder)holder).textView.setText(userModels.get(position).userName);
+
+             holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getView().getContext(), MessageActivity.class);
+                    ActivityOptions activityOptions = ActivityOptions.makeCustomAnimation(view.getContext(), R.anim.fromright, R.anim.toleft);
+                    startActivity(intent, activityOptions.toBundle());
+                }
+            });
 
         }
 
